@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://glitch.com/favicon.ico" />
+        <!--
+        This is the page head - it contains info the browser uses
+        Like the title, which appears on the browser tab but not inside the page
+        Further down you'll see the content that displays in the page
+        -->
+        <title>chatter|app</title>
+        <!-- The website stylesheet, will be used in future -->
+        <link rel="stylesheet" href="/style.css" />
+        <!-- The website JavaScript file -->
+        <script src="/script.js" defer></script>
+
+        <!-- Internal Styling -->
+        <style>
+            * {
+                font-family: Roboto, Arial, sans-serif;
+            }
+            body {
+              background-color: linen;
+            }
+            h1, h2{
+                color:#00838f;
+            }
+            h1 {
+              margin-left: 40px;
+            }
+            h2 {
+                font-size: smaller;
+            }
+            p {
+                background-color: #eeeeee;
+            }
+            button {
+                background-color: #00838f;
+                color: white;
+                text-transform: uppercase;
+                font-size: larger;
+            }
+            </style>
+        </head>
+    <body>
+        <!-- Channel Section -->
+        <section>
+            <h1>chatter | app</h1>
+            <h2>Favorites</h2>
+            <b>MeetUp </b> <small>10:52</small>
+            <br>
+            <b>DanceLessons</b> <small>24.05.2025</small>
+            <h2>Regular</h2>
+            <b>WeatherChannel</b> <small>Yesterday</small>
+            <br>
+            <b>DailyUpdate</b> <small>a long time ago</small>
+
+        </section>
+
+        <!-- Chat Section -->
+        <section>
+            <h1>MeetUp</h1>
+            <button type="button" onclick="alert('clicked fav')">favorites</button>
+            <h2>Catherine</h2>
+            <p>Hey, so I spoke to Aziz and he is available, hence we can all meet at my place on Saturday evening for the New Year's Eve.</p>
+            <small>Yesterday</small>
+
+            <h2>Beka</h2>
+            <p>What's the address again. I recently switched phones and don't have old messages.</p>
+            <small>9:01</small>
+
+            <h2>Charlene</h2>
+            <p>Leute, müssen wir alles in Deutsch unterhalten. Aziz will lernen.</p>
+            <small>9:30</small>
+            <br>
+            <br>
+
+            <input type="text" id="messages" />
+            <button type="submit" value="Submit" onclick="alert('sent')">send</button>
+        </section>
+    </body>
+</html>
